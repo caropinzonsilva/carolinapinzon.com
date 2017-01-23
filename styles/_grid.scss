@@ -1,0 +1,32 @@
+@import "susy";
+$susy: ( 
+    columns: 20, 
+    gutters: 1/2, 
+    math: fluid,
+    output: float, 
+    gutter-position: split, 
+    flow: ltr, 
+    container: auto, 
+    container-position: center, 
+    last-flow: to, 
+    global-box-sizing: border-box, 
+    debug: (
+        image: hide,
+        color: rgba(#656, 0.25),
+        output: background,
+        toggle: top right
+    ),
+    use-custom: (
+        background-image: true,
+        box-sizing: true,
+        clearfix: false,
+        rem: true
+    )
+);
+
+/* Makes border-box properties */
+
+@include border-box-sizing;
+.wrap {
+    @include container;
+}
