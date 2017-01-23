@@ -101,6 +101,6 @@ jspm_packages
 # End of https://www.gitignore.io/api/windows,macos,node
 
 #Generated files
-scripts/script.min.js
-styles/style.min.css
+#scripts/script.min.js
+#styles/style.min.css
 *.afdesign
