@@ -264,13 +264,18 @@ body {
 }
 
 .hideScroll {
-    .description, img {
+    /*.description, img {
        visibility: hidden; 
+    }*/
+
+    img {
+        visibility: hidden; 
     }
 }
 
 .showScroll {
-    .description, img {
+    //.description, img {
+    img {
         -webkit-animation-duration: .6s; 
         animation-duration: .6s; 
         -webkit-animation-fill-mode: both; 
@@ -280,10 +285,10 @@ body {
     }
 
     .description {
-        -webkit-animation-name: fadeInUp;
+        /*-webkit-animation-name: fadeInUp;
         animation-name: fadeInUp;
         -webkit-animation-delay: 1s;
-        animation-delay: 1s;
+        animation-delay: 1s;*/
     }
 
     img {
@@ -351,6 +356,17 @@ body {
     z-index: 0;
 }
 
+#time:before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: calc(60% - 20px);
+    height: calc(100% - 20px);
+    background-color: $blue;
+    z-index: 0;
+}
+
 #homeTitle {
     display: none;
 }
@@ -358,4 +374,9 @@ body {
 .down {
     @include span(20);
     height: 700px;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
 }
