@@ -215,6 +215,7 @@ body {
 
 .workPreview {
     @include span(20/3);
+    margin-bottom: gutter(18);
 
     cursor: pointer;
     position: relative;
@@ -230,13 +231,13 @@ body {
     .title {
         position: relative;
         z-index: 1;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .description {
         position: relative;
         z-index: 1;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         display: inline-block;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -317,8 +318,8 @@ body {
     position: absolute;
     right: 10px;
     top: 10px;
-    width: calc(100% - 20px);
-    height: calc(50% - 20px);
+    width: calc(60% - 20px);
+    height: calc(100% - 20px);
     background-color: $blue;
     z-index: 0;
 }
@@ -332,6 +333,48 @@ body {
     height: calc(100% - 20px);
     background-color: $blue;
     z-index: 0;
+}
+
+#movies {
+    clear: left;
+}
+
+#rex {
+
+    @media screen and (max-width: $break-medium) {
+        clear: right;
+    }
+}
+
+#time {
+    clear: left;
+
+    @media screen and (max-width: $break-medium) {
+        clear: right;
+    }
+}
+
+#horizon {
+
+    @media screen and (max-width: $break-medium) {
+        clear: right;
+    }
+}
+
+#recreovias {
+    clear: right;
+
+    @media screen and (max-width: $break-medium) {
+        clear: left;
+    }
+}
+
+#jinetes {
+    clear: right;
+    
+    @media screen and (max-width: $break-medium) {
+        clear: left;
+    }
 }
 
 #rex:before {
@@ -361,8 +404,8 @@ body {
     position: absolute;
     right: 10px;
     top: 10px;
-    width: calc(60% - 20px);
-    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    height: calc(50% - 20px);
     background-color: $blue;
     z-index: 0;
 }

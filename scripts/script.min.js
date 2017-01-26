@@ -1,4 +1,4 @@
-var links = ["home", "work", "about"];
+var links = ["home", "work"];
 var linkElements = [];
 var titleElements = [];
 var hiddenScroll = [];
@@ -33,7 +33,7 @@ window.onload = function() {
         if(linkElements[i] != undefined) {
             linkElements[i].onclick = function() {
                 var id = this.id.substring(0, this.id.length - 4) + "Title";
-                smoothScroll(id, 90);
+                smoothScroll(id, 88);
             }
         }
     }
