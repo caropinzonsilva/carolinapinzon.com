@@ -49,6 +49,7 @@ window.onload = function() {
         if(linkSmallElements[i] != undefined) {
             linkSmallElements[i].onclick = function() {
                 document.getElementById("linksMobile").classList.remove("open");
+                document.getElementById("menu").classList.remove("open");
                 var id = this.id.substring(0, this.id.length - 9) + "Title";
                 smoothScroll(id, 88);
             }
