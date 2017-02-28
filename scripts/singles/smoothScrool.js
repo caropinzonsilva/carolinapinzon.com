@@ -24,6 +24,7 @@ function elmYPosition(eID, padding) {
 
 
 function smoothScroll(eID, padding) {
+    autoScroll = true;
     var startY = currentYPosition();
     var stopY = elmYPosition(eID, padding);
     var distance = stopY > startY ? stopY - startY : startY - stopY;
@@ -39,7 +40,9 @@ function smoothScroll(eID, padding) {
         for ( var i=startY; i<stopY; i+=step ) {
             setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
             leapY += step; if (leapY > stopY) leapY = stopY; timer++;
-        } return;
+        }
+        setTimeout("autoScroll = false",timer * speed);
+        return;
     }
     for ( var i=startY; i>stopY; i-=step ) {
         setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);

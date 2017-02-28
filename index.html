@@ -24,8 +24,20 @@
         <img src="images/logo.svg">
         <div class="links active" id="homeLink">Home</div>
         <div class="links" id="workLink">My Work</div>
-        <!--<div class="links" id="aboutLink">About Me</div>
-        <div class="links" id="contactLink">Contact</div>-->
+        <div class="links" id="aboutLink">About Me</div>
+        <div class="links" id="contactLink">Contact</div>
+        <div id="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+    <div id="linksMobile">
+        <div class="linksSmall active" id="homeLinkSmall">Home</div>
+        <div class="linksSmall" id="workLinkSmall">My Work</div>
+        <div class="linksSmall" id="aboutLinkSmall">About Me</div>
+        <div class="linksSmall" id="contactLinkSmall">Contact</div>
     </div>
     <div class="wrapper">
         <div class="titleFull serif" id="homeTitle">My Work</div>
@@ -44,7 +56,7 @@
             <div class="workPreview hideScroll" id="movies">
                 <img src="images/movies.png">
                 <div class="title">Futuristic Interface Recreation</div>
-                <!--<div class="description"></div>-->
+                <div class="description">I created this project in order to face new development challenges, having fun with it during my free time.<br><br>The idea is taking any futuristic design and making it real in a web environment. So far I have been able to reacreate this beautiful Guardians of the Galaxy interface designed by <a class="link" href="http://territorystudio.com/projects/guardians-of-the-galaxy/" target="_blank">Territory Studio</a>.</div>
                 <div class="tag">Frontend</div>
                 <div class="tag">CSS Modules (Sass)</div>
                 <div class="tag">Responsive</div>
@@ -52,55 +64,25 @@
                 <div class="tag">CSS animation</div>
             </div>
         </a>
-        <a href="http://www.rexingenieria.com" target="_blank">
-            <div class="workPreview hideScroll" id="rex">
-                <div class="title">Rex Ingeniería</div>
-                <!--<div class="description"></div>-->
-                <img src="images/rex.png">
-                <div class="tag">Wordpress theme</div>
-                <div class="tag">Responsive</div>
-                <div class="tag">Image clip paths</div>
-                <div class="tag">Node</div>
+        <a href="http://carolinapinzon.com:8080/Recreovias" target="_blank">
+            <div class="workPreview hideScroll" id="recreovias">
+                <div class="title">Recreovías</div>
+                <div class="description">Recreovías are free recreational activities offered by the Institude of Sports and Recreation in Bogotá, Colombia.<br><br>This mobile application seeks to improve the attendance to this activities using Machine Learning Recommendation Systems that suggests Recreovías to the user.</div>
+                <img src="images/recreovias.png">
+                <div class="tag">Full stack</div>
+                <div class="tag">Ionic</div>
+                <div class="tag">Java</div>
+                <div class="tag">Auth0</div>
+                <div class="tag">Postgres</div>
+                <div class="tag">Collaborative filtering</div>
+                <div class="tag">Content-based filtering</div>
+                <div class="tag">Demograpgic correlation</div>
             </div>
         </a>
-        <a href="http://www.jinetescolombianos.org" target="_blank">
-            <div class="workPreview hideScroll" id="jinetes">
-                <img src="images/jinetes.png">
-                <div class="title">Jinetes Colombianos</div>
-                <!--<div class="description"></div>-->
-                <div class="tag">Frontend</div>
-                <div class="tag">CSS Modules (Sass)</div>
-                <div class="tag">Responsive</div>
-                <div class="tag">Node</div>
-            </div>
-        </a>
-        <a href="http://timefilter.carolinapinzon.com" target="_blank">
-            <div class="workPreview hideScroll" id="time">
-                <img src="images/time.png">
-                <div class="title">Time Filter</div>
-                <!--<div class="description"></div>-->
-                <div class="tag">CSS Modules (Sass)</div>
-                <div class="tag">Responsive</div>
-                <div class="tag">SVG</div>
-            </div>
-        </a>
-        <div class="workPreview hideScroll" id="recreovias">
-            <div class="title">Recreovías</div>
-            <!--<div class="description">Recreovías are free recreational activities offered by the Institude of Sports and Recreation in Bogotá, Colombia.<br><br>This mobile application seeks to improve the attendance to this activities using Machine Learning Recommendation Systems that suggests Recreovías to the user.</div>-->
-            <img src="images/recreovias.png">
-            <div class="tag">Full stack</div>
-            <div class="tag">Ionic</div>
-            <div class="tag">Java</div>
-            <div class="tag">Auth0</div>
-            <div class="tag">Postgres</div>
-            <div class="tag">Collaborative filtering</div>
-            <div class="tag">Content-based filtering</div>
-            <div class="tag">Demograpgic correlation</div>
-        </div>
-        <div class="workPreview hideScroll" id="horizon">
+         <div class="workPreview hideScroll" id="horizon">
             <img src="images/horizon.png">
             <div class="title">Horīzon</div>
-            <!--<div class="description"></div>-->
+            <div class="description">Developed as my thesis project, Horīzon uses Machine Learning to decide the location of a new project, predicting the outcome based on previous projects’ results and different enviromental variables.<br><br>The project focuses in creating a simple user interaction and experimenting with visual data representation.</div>
             <div class="tag">Full stack</div>
             <div class="tag">Decision tree ID3</div>
             <div class="tag">Node</div>
@@ -108,11 +90,69 @@
             <div class="tag">MongoDB</div>
             <div class="tag">Leaflet</div>
         </div>
-        <!--<div class="titleFull serif" id="aboutTitle">About Me</div>
-        <div>
-            <img src="images/me.png" style="display: none;">
+        <a href="https://github.com/cps543/timecontroller" target="_blank">
+            <div class="workPreview hideScroll" id="time">
+                <img src="images/time.png">
+                <div class="title">Time Filter</div>
+                <div class="description">With the idea of creating a time filter that was flexible and alowed the user to choose combinations of time ranges, we developed this open source component.</div>
+                <div class="tag">Javascript Library</div>
+                <div class="tag">Open source</div>
+                <div class="tag">SVG Paths</div>
+            </div>
+        </a>
+        <a href="http://www.rexingenieria.com" target="_blank">
+            <div class="workPreview hideScroll" id="rex">
+                <div class="title">Rex Ingeniería</div>
+                <div class="description">Rex Ingeniería is a construction company with more than 15 years of experience. We were in charge of the design and implementation of a modern webpage with focus on the company's project.</div>
+                <img src="images/rex.png">
+                <div class="tag">Design</div>
+                <div class="tag">Wordpress theme</div>
+                <div class="tag">Responsive</div>
+                <div class="tag">Image clip paths</div>
+            </div>
+        </a>
+        <a href="http://www.jinetescolombianos.org" target="_blank">
+            <div class="workPreview hideScroll" id="jinetes">
+                <img src="images/jinetes.png">
+                <div class="title">Jinetes Colombianos</div>
+                <div class="description">In a minimalist calendar, this project collects the information of the national and international events that Colombian horseback riders attend.</div>
+                <div class="tag">Angular</div>
+                <div class="tag">Full Stack</div>
+                <div class="tag">Design</div>
+                <div class="tag">Responsive</div>
+            </div>
+        </a>
+        <div class="titleFull serif" id="aboutTitle">About Me</div>
+        <div class="aboutMeContent hideScroll">
+            <img src="images/col_chil.svg" class="map">
+            <div class="content">
+                <div>Borned and raised in Bogotá, Colombia with Chilean family from my mother's side, both <b>Colombian</b> and <b>Chilean</b> at heart.</div>
+                <br><br>
+                <div>Graduated from a double degree in <b>Systems and Computer Engineering</b> and <b>Electronics Engineering</b> at Universidad de los Andes (Bogotá, Colombia)</div>
+                <br><br>
+                <div>Since I did an exchange semester in <b>Lund, Sweden</b> and an internship in <b>Rio de Janeiro, Brazil</b>, I fell in love with working with people from all over the world.</div>
+                <br><br>
+                <div>Currently working as a freelancer jobs in Bogotá, but eager to relocate as a Frontend Developer.</div>
+            </div>
         </div>
-        <div class="down"></div>-->
+        <!--<div class="titleFull serif" id="contactTitle">Contact</div>-->
+    </div>
+    <div id="contactTitle">
+        <p>Developed and designed by me, <span>Carolina Pinzón</span></p>
+        <div class="iconsContainer">
+            <a href="https://www.facebook.com/cps920404" target="_blank">
+                <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M27.533,26.014c0,0.839 -0.68,1.519 -1.519,1.519l-7.016,0l0,-10.662l3.579,0l0.535,-4.156l-4.114,0l0,-2.652c0,-1.203 0.333,-2.023 2.059,-2.023l2.2,-0.001l0,-3.717c-0.38,-0.05 -1.686,-0.163 -3.206,-0.163c-3.173,0 -5.345,1.936 -5.345,5.492l0,3.064l-3.588,0l0,4.156l3.588,0l0,10.662l-13.187,0c-0.839,0 -1.519,-0.68 -1.519,-1.519l0,-24.495c0,-0.839 0.68,-1.519 1.519,-1.519l24.495,0c0.839,0 1.519,0.68 1.519,1.519l0,24.495Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/carolina.pinzon.silva/" target="_blank">
+                <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M24.919,24.06c0,0.474 -0.384,0.86 -0.859,0.86l-20.623,0c-0.474,0 -0.859,-0.386 -0.859,-0.86l0,-12.889l3.437,0c-0.448,0.644 -0.599,1.846 -0.599,2.61c0,4.601 3.753,8.345 8.364,8.345c4.613,0 8.366,-3.744 8.366,-8.345c0,-0.764 -0.109,-1.947 -0.664,-2.61l3.437,0l0,12.889Zm-11.139,-15.555c2.921,0 5.289,2.363 5.289,5.276c0,2.913 -2.368,5.275 -5.289,5.275c-2.919,0 -5.287,-2.362 -5.287,-5.275c0,-2.913 2.368,-5.276 5.287,-5.276m5.984,-4.209c0,-0.474 0.385,-0.859 0.859,-0.859l2.578,0c0.474,0 0.859,0.385 0.859,0.859l0,2.579c0,0.474 -0.385,0.858 -0.859,0.858l-2.578,0c-0.474,0 -0.859,-0.384 -0.859,-0.858l0,-2.579Zm4.465,-4.296l-20.961,0c-1.805,0 -3.268,1.46 -3.268,3.261l0,20.975c0,1.801 1.463,3.261 3.268,3.261l20.961,0c1.805,0 3.268,-1.46 3.268,-3.261l0,-20.975c0,-1.801 -1.463,-3.261 -3.268,-3.261"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/carolina-silva-9a38b6130/" target="_blank">
+                <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><rect x="0.612" y="9.238" width="5.393" height="17.087"/><path d="M20.739,9.074c-3.09,0 -5.025,1.673 -5.383,2.846l0,-2.682l-6.059,0c0.079,1.424 0,17.087 0,17.087l6.059,0l0,-9.246c0,-0.514 -0.025,-1.028 0.131,-1.397c0.417,-1.027 1.312,-2.094 2.921,-2.094c2.103,0 3.06,1.581 3.06,3.895l0,8.842l6.114,0l0,-9.501c0,-5.292 -3.011,-7.75 -6.843,-7.75"/><path d="M3.209,1.172c-1.991,0 -3.294,1.279 -3.294,2.967c0,1.656 1.265,2.962 3.217,2.962l0.039,0c2.028,0 3.29,-1.311 3.29,-2.967c-0.039,-1.686 -1.262,-2.962 -3.252,-2.962"/></svg>
+            </a>
+            <a href="https://github.com/cps543" target="_blank">
+                <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M13.763,0.343c-7.601,0 -13.763,6.163 -13.763,13.763c0,6.082 3.943,11.239 9.412,13.059c0.688,0.126 0.939,-0.3 0.939,-0.662c0,-0.328 -0.012,-1.413 -0.019,-2.562c-3.827,0.831 -4.636,-1.623 -4.636,-1.623c-0.627,-1.59 -1.528,-2.013 -1.528,-2.013c-1.251,-0.853 0.095,-0.837 0.095,-0.837c1.382,0.096 2.109,1.418 2.109,1.418c1.228,2.104 3.222,1.496 4.005,1.143c0.125,-0.887 0.482,-1.495 0.874,-1.838c-3.055,-0.348 -6.269,-1.529 -6.269,-6.802c0,-1.504 0.537,-2.73 1.415,-3.694c-0.14,-0.349 -0.614,-1.75 0.136,-3.644c0,0 1.155,-0.369 3.785,1.411c1.098,-0.306 2.274,-0.457 3.444,-0.462c1.17,0.005 2.347,0.158 3.446,0.464c2.626,-1.782 3.782,-1.411 3.782,-1.411c0.752,1.896 0.279,3.294 0.138,3.642c0.882,0.964 1.414,2.19 1.414,3.694c0,5.287 -3.219,6.451 -6.285,6.792c0.496,0.427 0.934,1.263 0.934,2.547c0,1.839 -0.018,3.323 -0.018,3.776c0,0.367 0.25,0.795 0.947,0.661c5.465,-1.823 9.405,-6.981 9.405,-13.059c0,-7.6 -6.162,-13.763 -13.763,-13.763Z"/></svg>
+            </a>
+        </div>
     </div>
 </body>
 
