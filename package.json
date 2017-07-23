@@ -27,6 +27,6 @@
     "gulp": "^3.9.1",
     "pump": "^1.0.1",
     "sass-flex-mixin": "^1.0.3",
-    "run-sequence": "^1.2.1",
+    "run-sequence": "^1.2.1"
   }
 }

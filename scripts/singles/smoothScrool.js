@@ -31,8 +31,9 @@ function smoothScroll(eID, padding) {
     if (distance < 100) {
         scrollTo(0, stopY); return;
     }
-    var speed = Math.round(distance / 100);
+    var speed = Math.round(distance / 40);
     if (speed >= 20) speed = 20;
+    console.log(speed);
     var step = Math.round(distance / 25);
     var leapY = stopY > startY ? startY + step : startY - step;
     var timer = 0;
