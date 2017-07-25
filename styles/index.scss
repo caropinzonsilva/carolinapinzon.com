@@ -243,6 +243,16 @@ body {
         }
     }
 
+    a:nth-of-type(2n+1) {
+
+        @media screen and (min-width: $break-small) {
+            .computerContainer {
+                float: right;
+            }
+        }
+    }
+
+
     @media screen and (max-width: $break-small) {
         .title {
             padding: 20px;
@@ -301,7 +311,7 @@ body {
             &:hover {
                 
                 svg {
-                    fill: $grey;
+                    fill: rgba(250,219,224,1);
                 }
             }
         }
@@ -325,7 +335,7 @@ body {
     }
 }
 
-.proyect {
+.project {
     padding: 40px 80px;
     text-align: center;
 
@@ -423,15 +433,6 @@ body {
 
         .gifStaticContainer .static {
             display: none;
-        }
-    }
-
-    &:nth-child(2n+1) {
-
-        @media screen and (min-width: $break-small) {
-            .computerContainer {
-                float: right;
-            }
         }
     }
 
