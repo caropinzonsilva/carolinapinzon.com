@@ -26,7 +26,7 @@ window.onload = function() {
         setTimeout(function() {
             randomCactus.classList.add('animatedSlow','fadeOutIn');
         },0);
-    },300);
+    }, 1000);
 
     document.getElementById('scroll').onclick = function() {
         smoothScroll('myWork', 0);
